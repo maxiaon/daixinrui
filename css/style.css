@@ -1,0 +1,248 @@
+@charset "utf-8";
+body,html,.swiper-container,.main{width:100%;height:100%;overflow:hidden}
+html{font-size:100px;}
+.page1 .text,.page1 .text .text02,.page1 .text .text03,.page2 .text1,.page2 .text1 .text05,.page2 text1 text06,.page2 .text1 .text07,.page3 text2 .text08,.page3 text2 h2,.page3 text2 h2,.page3 text2 .text09,.page3 text2 .text10,.page3 text2 .text11,.page3 text2 .text13,.page3 text2 h1,.page4 .text3 .text12,.page4 .text3 h2{opacity:0}
+/*箭头*/
+.arrow{z-index:99;
+       position:absolute;
+	   bottom:.2rem;
+	   left:50%;
+	   margin-left:-.425rem;
+	   width:.85rem;
+	   height:.83rem;
+	   background:url(../images/arrow.png) no-repeat;
+	   background-size:cover;
+	   -webkit-animation: fadeInUp 1s .2s infinite ease both;
+       animation: fadeInUp 1s .2s infinite ease both;
+}
+/*音乐*/
+.music{z-index:100;
+       position:absolute;
+	   top:.2rem;
+	   left:.2rem;
+	   width:.6rem;
+	   height:.6rem;
+	   background:url(../audio/music.svg) no-repeat;
+	   background-size:100% 100%;
+}
+.music audio {
+    display:none;
+}
+/*音乐动画*/
+.music {
+    -webkit-animation: musicMove 1s linear 0s infinite both;
+    animation: musicMove 1s linear 0s infinite both;
+}
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+} 
+/*第一页*/
+.page1{background:url(../images/page%201/Bg.jpg) no-repeat;
+       background-size:100% 100%;
+}
+.page1 .text{
+	position:absolute;
+	top:.95rem;
+	right:.95rem;
+	background:url(../images/page%201/text01.png) no-repeat;
+	width:4.87rem;
+	height:4.57rem;
+	background-size:cover;
+}
+.page1 .text div{width:2.5rem;margin:.2rem auto;}
+.page1 .text .text02{
+	height:1.52rem;
+	background:url(../images/page%201/text02..png) no-repeat;
+	background-size:cover;
+	margin-top:50px;
+	margin-left:145px;
+}
+.page1 .text .text03{
+	height:1.52rem;
+	background:url(../images/page%201/text03..png) no-repeat;
+	background-size:cover;
+	margin-left:145px;
+}
+/*第一页动画*/
+#page1 .text{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both;}
+#page1 .text .text02{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both}
+#page1 .text .text03{-webkit-animation: fadeIn 1s ease .8s both;animation: fadeIn 1s ease .8s both}
+/*第二页*/
+.page2{
+	background:url(../images/bobyBG.jpg) no-repeat;
+	background-size:100% 100%;
+}
+.page2 .text1{
+	position:absolute;
+}
+.page2 .text1 .text05{
+	background:url(../images/page%202/text05.png) no-repeat;
+	width:2rem;
+	height:2rem;
+	margin-top:40px;
+	margin-left:200px;
+	background-size:cover;
+}
+.page2 .text1 .text06{
+	background:url(../images/page%202/text06.png) no-repeat;
+	width:2.5rem;
+	height:0.42rem;
+	margin-left:200px;
+	margin-top:-10px;
+	background-size:cover;
+}
+.page2 .text1 .text07{
+	background:url(../images/page%202/text07.png) no-repeat;
+	width:2.5rem;
+	height:5rem;
+	margin-left:190px;
+	margin-top:25px;
+	background-size:cover;
+}
+/*第二页动画*/
+#page2 .text1{-webkit-animation: fadeIn 1s ease .2s both;animation: fadeIn 1s ease .2s both;}
+#page2 .text1 .text05{-webkit-animation: zoomIn 1s ease .2s both;animation: zoomIn 1s ease .2s both}
+#page2 .text1 .text07{-webkit-animation: rollIn 1s ease 0.6s both;animation: rollIn 1s ease .6s both}
+/*第三页*/
+.page3{
+	background:url(../images/bobyBG.jpg) no-repeat;
+	background-size:100% 100%;
+}
+.page3 .text2{
+	position:absolute;
+}
+.page3 .text2 .text08{
+	background:url(../images/page%203/text08.png) no-repeat;
+	width:3.8rem;
+	height:2rem;
+	margin-top:50px;
+	margin-left:45px;
+}
+h2{
+	font-size:18px;
+	font-family:"黑体";
+	margin-top:-153px;
+	margin-left:112px;
+}
+h3{
+	font-size:18px;
+	font-family:"黑体";
+	margin-top:-153px;
+	margin-left:112px;
+}
+.page3 .text2 .text09{
+	background:url(../images/page%203/text09..png) no-repeat;
+	width:5.5rem;
+	height:2rem;
+	margin-top:30px;
+	margin-left:110px;
+}
+.page3 .text2 .text10{
+	background:url(../images/page%203/text08.png) no-repeat;
+	width:3.8rem;
+	height:2rem;
+	margin-top:-80px;
+	margin-left:45px;
+}
+.page3 .text2 .text11{
+	background:url(../images/page%203/text10.png) no-repeat;
+	width:5.08rem;
+	height:3.9rem;
+	margin-top:10px;
+	margin-left:95px;
+}
+.page3 .text2 .text13{
+	background:url(../images/page%203/text08.png) no-repeat;
+	width:3.8rem;
+	height:2rem;
+	margin-top:-200px;
+	margin-left:45px;
+}
+h1{
+	font-size:18px;
+	font-family:"黑体";
+	margin-top:-153px;
+	margin-left:112px;
+}
+.page3 .text2 .text14{
+	background:url(../images/page%203/text13.png) no-repeat;
+	width:5rem;
+	height:2rem;
+	margin-top:25px;
+	margin-left:87px;
+}
+/*第三页动画*/
+#page3 .text2 h2{
+	-webkit-animation: bounceInRight 1s ease 2s both;animation: bounceInDown 1s ease 2s both
+}
+#page3 .text2 h3{
+	-webkit-animation: bounceInRight 2s ease 2s both;animation: bounceInDown 2s ease 2s both
+}
+#page3 .text2 h1{
+	-webkit-animation: bounceInRight 3s ease 2s both;animation: bounceInDown 3s ease 2s both
+}
+#page3 .text2 .text08{
+	-webkit-animation: bounceInRight 1s ease 1s both;animation: bounceInDown 1s ease 1s both
+}
+#page3 .text2 .text10{
+	-webkit-animation: bounceInRight 2s ease 1s both;animation: bounceInDown 2s ease 1s both
+}
+#page3 .text2 .text13{
+	-webkit-animation: bounceInRight 3s ease 1s both;animation: bounceInDown 3s ease 1s both
+}
+#page3 .text2 .text09{
+	-webkit-animation: lightSpeedIn 3.5s ease 3.5s both;animation: lightSpeedIn 3.5s ease 3.5s both
+}
+#page3 .text2 .text11{
+	-webkit-animation: lightSpeedIn 6s ease 6s both;animation: lightSpeedIn 6s ease 6s both
+}
+#page3 .text2 .text14{
+	-webkit-animation: lightSpeedIn 9.5s ease 9.5s both;animation: lightSpeedIn 9.5s ease 9.5s both
+}
+
+/*第四页*/
+.page4{
+	background:url(../images/bobyBG.jpg) no-repeat;
+	background-size:100% 100%;
+}
+.page4 .text3{
+	position:absolute;
+}
+.page4 .text3 .text12{
+	background:url(../images/page%204/text11..png) no-repeat;
+	width:2rem;
+	height:2rem;
+	margin-top:200px;
+	margin-left:210px;
+	background-size:cover;
+}
+.page4 .text3 h2{
+	font-family:"黑体";
+	font-size:16px;
+	margin-top:25px;
+	margin-left:265px;
+	
+}
+#page4 .text3 .text12{
+	-webkit-animation: rollIn 1s ease 0.6s both;animation: rollIn 1s ease .6s both
+}
+#page4 .text3 h2{
+	-webkit-animation: zoomIn 4s ease .2s both;animation: zoomIn 4s ease .2s both
+}
